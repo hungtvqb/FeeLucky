@@ -1,0 +1,6 @@
+ERROR  | wrapper  | 2018/10/24 15:18:44 | JVM exited while loading the application.
+ERROR  | wrapper  | 2018/10/24 15:18:50 | JVM exited while loading the application.
+ERROR  | wrapper  | 2018/10/24 15:18:57 | JVM exited while loading the application.
+ERROR  | wrapper  | 2018/10/24 15:20:16 | JVM did not exit on request, termination requested.
+ERROR  | wrapper  | 2018/10/24 15:23:16 | JVM did not exit on request, termination requested.
+ERROR  | wrapper  | 2018/10/24 15:25:00 | JVM exited unexpectedly.

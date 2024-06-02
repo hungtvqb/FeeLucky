@@ -1,0 +1,32 @@
+<c3p0-config>
+  <timeout-config>
+  	<!-- time out query DB (s) -->
+  	<property name="queryDbTimeout">120</property>
+  	<!-- thoi gian toi da khi thuc hien ham DB (ms) -->
+  	<property name="timeBreak">90000</property>
+  	<!-- thoi gian toi da khi thuc hien xoa record time out (ms) -->
+  	<property name="timeBreakDeleteRecordTimeOut">120000</property>
+  </timeout-config>
+  <named-config name="dbapp">   
+	<!--<property name="driver">oracle.jdbc.driver.OracleDriver</property> -->
+	<property name="driver">oracle.jdbc.OracleDriver</property>
+	<property name="connection">jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVER=SHARED)(SERVICE_NAME=unitel_vas)))</property>
+	<property name="username">ILUCKY</property>
+	<property name="password">ILuCkY#20$18</property>
+    <property name="initialPoolSize">5</property>   
+    <property name="maxPoolSize">5</property>
+    <property name="minPoolSize">2</property>
+	<!-- cau hinh timeout & check ket noi-->
+	<property name="readTimeout">30000</property><!-- milisecond-->
+	<property name="maxIdleTime">60</property><!-- second-->
+	<property name="maxIdleTimeExcessConnections">45</property><!-- second-->
+	<property name="maxStatements">1500</property>
+	<!--<property name="maxStatementsPerConnection">5</property>-->
+	<property name="statementCacheNumDeferredCloseThreads">1</property>
+    <property name="checkoutTimeout">0</property> <!-- milisecond-->
+     <property name="idleConnectionTestPeriod">30</property><!-- second-->
+	<property name="preferredTestQuery">select 1 from dual</property>
+	<property name="testConnectionOnCheckin">true</property>
+	<property name="testConnectionOnCheckout">true</property>		
+  </named-config>
+</c3p0-config>
